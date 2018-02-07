@@ -74,7 +74,7 @@ def apply_mask(image, mask, color, alpha=0.5):
 
 
 def display_instances(image, boxes, masks, class_ids, class_names,
-                      scores=None, title="",
+                      scores=None, points=None, title="",
                       figsize=(16, 16), ax=None):
     """
     boxes: [num_instance, (y1, x1, y2, x2, class_id)] in image coordinates.
@@ -104,6 +104,15 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     ax.axis('off')
     ax.set_title(title)
 
+    num = len(points)
+    if num:
+        for i in range(num):
+            y1, x1, y2, x2 = points[i]
+            p = patches.Rectangle((x1, y1), x2 - x1, y2 - y1, linewidth=5,
+                                alpha=1, linestyle="solid",
+                                edgecolor=colors[0], facecolor='none')
+            ax.add_patch(p)
+    
     masked_image = image.astype(np.uint32).copy()
     for i in range(N):
         color = colors[i]
