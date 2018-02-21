@@ -2,4 +2,7 @@ __pycache__/
 *.pyc
 /.cache
 /dataset
+/datasets
+/snapshot
 /snapshots
+/.vscode

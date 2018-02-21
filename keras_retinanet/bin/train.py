@@ -326,7 +326,7 @@ def main(args=None):
         model, training_model, prediction_model = create_models(num_classes=train_generator.num_classes(), weights=weights, multi_gpu=args.multi_gpu)
 
     # print model summary
-    print(model.summary())
+    # print(model.summary())
 
     # create the callbacks
     print('create the callbacks...')
