@@ -307,6 +307,7 @@ def main(args=None):
     keras.backend.tensorflow_backend.set_session(get_session())
 
     # create the generators
+    print('create the generators...')
     train_generator, validation_generator = create_generators(args)
 
     # create the model
@@ -328,6 +329,7 @@ def main(args=None):
     print(model.summary())
 
     # create the callbacks
+    print('create the callbacks...')
     callbacks = create_callbacks(
         model,
         training_model,
@@ -337,6 +339,7 @@ def main(args=None):
     )
 
     # start training
+    print('start training...')
     training_model.fit_generator(
         generator=train_generator,
         steps_per_epoch=args.steps,
@@ -344,6 +347,7 @@ def main(args=None):
         verbose=1,
         callbacks=callbacks,
     )
+    print('done')
 
 if __name__ == '__main__':
     main()
