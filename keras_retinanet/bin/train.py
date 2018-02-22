@@ -103,7 +103,7 @@ def create_callbacks(model, training_model, prediction_model, validation_generat
             os.path.join(
                 args.snapshot_path,
                 # 'resnet50_{dataset_type}_{{epoch:02d}}.h5'.format(dataset_type=args.dataset_type)
-                os.path.join(args.snapshot_path, 'weight_resnet50_{dataset_type}_epoch_{{epoch:02d}}_loss_{{loss:.5f}}_regression_loss_{{regression_loss:.5f}}_classification_loss_{{classification_loss:.5f}}.h5'.format(dataset_type=args.dataset_type)),
+                os.path.join(args.snapshot_path, 'resnet50_{dataset_type}_epoch_{{epoch:02d}}_loss_{{loss:.5f}}.h5'.format(dataset_type=args.dataset_type)),
             ),
             verbose=1
         )

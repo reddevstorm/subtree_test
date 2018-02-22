@@ -8,6 +8,10 @@ from numpy import array
 import sys
 sys.path.append("..")
 
+
+print('----------------------------------------')
+print('start')
+
 # Root directory of the project
 ROOT_DIR = os.getcwd()
 
@@ -16,12 +20,16 @@ DIR_ROOT = os.getcwd()
 DIR_DEEPFASHION = "dataset/deepfashion"
 DIR_ROOT_DEEPFASHION = os.path.join(DIR_ROOT, DIR_DEEPFASHION)
 DIR_ROOT_DEEPFASHION_IMAGE = os.path.join(DIR_ROOT, DIR_DEEPFASHION, "images")
+DIR_DEEPFASHION_IMAGE = "images"
 FILE_TRAIN_CSV = os.path.join(DIR_DEEPFASHION, "instances_train2017.csv")
 FILE_VAL_CSV = os.path.join(DIR_DEEPFASHION, "instances_val2017.csv")
 FILE_CATEGORIES_CSV = os.path.join(DIR_DEEPFASHION, "categories2017.csv")
 
-if not os.path.exists(DIR_ROOT_DEEPFASHION_IMAGE):
-    os.makedirs(DIR_ROOT_DEEPFASHION_IMAGE)
+if not os.path.exists(os.path.join(DIR_DEEPFASHION, DIR_DEEPFASHION_IMAGE)):
+    os.makedirs(os.path.join(DIR_DEEPFASHION, DIR_DEEPFASHION_IMAGE))
+    
+    
+START_CATEGORY_ID = 100
 
 
 # path 설정
@@ -36,7 +44,7 @@ with open(path_list_category_cloth) as file_list_category_cloth:
     next(file_list_category_cloth)
     for index, line in enumerate(file_list_category_cloth):
         name = line.strip()[:-1].strip()
-        id = index+1
+        id = index+1+START_CATEGORY_ID
         categories.append([name, id])
         categories_dic[id] = name
 
@@ -73,9 +81,10 @@ with open(path_list_bbox) as file_path_list_bbox:
             
             image_format = line_image[0].split('/')[-1].split('.')[1]
             image_name = str(index+100000000000+1).zfill(12)+'.'+image_format
-            new_image_path = os.path.join(DIR_ROOT_DEEPFASHION_IMAGE, image_name)
+            new_global_image_path = os.path.join(DIR_ROOT_DEEPFASHION_IMAGE, image_name)
+            new_local_image_path = os.path.join(DIR_DEEPFASHION_IMAGE, image_name)
             
-            category_id = line_image[1]
+            category_id = int(line_image[1])+START_CATEGORY_ID
             
             # 이미지 파일 유무 확인
             #if not os.path.exists(image_path):
@@ -94,20 +103,20 @@ with open(path_list_bbox) as file_path_list_bbox:
             
             # coco dataset과 동일한 local 경로로 파일 이동 또는 복사한다
             # move file
-            # shutil.move(image_path, new_image_path)
+            # shutil.move(image_path, new_global_image_path)
             # copy file
-            if not os.path.exists(new_image_path):
-                copyfile(image_path, new_image_path)
+            if not os.path.exists(new_global_image_path):
+                copyfile(image_path, new_global_image_path)
                 
-            dataset_annotations.append([new_image_path, line_bbox[1], line_bbox[2], line_bbox[3], line_bbox[4], categories_dic[int(category_id)]])
+            dataset_annotations.append([new_local_image_path, line_bbox[1], line_bbox[2], line_bbox[3], line_bbox[4], categories_dic[int(category_id)]])
             
 print('end parsing ~')
 
 
 dataset_annotations = np.asarray(dataset_annotations)
 
-print('class num - ',len(dataset_classes))
-print('image num - ',len(dataset_annotations))
+print('class 개수 - ',len(dataset_classes))
+print('image 개수 - ',len(dataset_annotations))
 
 
 
@@ -118,16 +127,19 @@ threshold = int(dataset_annotations.shape[0] * 0.8)
 train_annotations = dataset_annotations[:threshold,]
 test_annotations = dataset_annotations[threshold:,]
 
-print("train num - ", train_annotations.shape[0])
-print("test num - ", test_annotations.shape[0])
+print("train 개수 - ", train_annotations.shape[0])
+print("test 개수 - ", test_annotations.shape[0])
 
-print("train sample - ", train_annotations[0][5])
-print("test sample - ", test_annotations[0][5])
+print("train 샘플 - ", train_annotations[0][5])
+print("test 샘플 - ", test_annotations[0][5])
 
 
 np.savetxt(FILE_TRAIN_CSV, train_annotations, delimiter=",", fmt="%s") 
-print('FILE_TRAIN_CSV')
+print('saved instances_train2017.csv')
 np.savetxt(FILE_VAL_CSV, test_annotations, delimiter=",", fmt="%s") 
-print('FILE_VAL_CSV')
+print('saved instances_val2017.csv')
 np.savetxt(FILE_CATEGORIES_CSV, dataset_classes, delimiter=",", fmt="%s")
-print('FILE_CATEGORIES_CSV')
+print('saved categories2017.csv')
+
+print('----------------------------------------')
+print('done')

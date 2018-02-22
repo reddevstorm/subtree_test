@@ -27,6 +27,8 @@ DIR_ALL_IMAGES_TRAIN2017 = os.path.join(DIR_ALL, "images/train2017")
 DIR_ALL_IMAGES_VAL2017 = os.path.join(DIR_ALL, "images/val2017")
 FILE_ALL_TRAIN_JSON = os.path.join(DIR_ALL_ANNOTATIONS, "instances_train2017.json")
 FILE_ALL_VAL_JSON = os.path.join(DIR_ALL_ANNOTATIONS, "instances_val2017.json")
+FILE_DEEP_TRAIN_JSON = os.path.join(DIR_ALL_ANNOTATIONS, "deep_train2017.json")
+FILE_DEEP_VAL_JSON = os.path.join(DIR_ALL_ANNOTATIONS, "deep_val2017.json")
 
 if not os.path.exists(DIR_ALL_ANNOTATIONS):
     os.makedirs(DIR_ALL_ANNOTATIONS)
@@ -89,6 +91,21 @@ val_data['categories'] = all_cate
 val_data['images'] = all_val_img
 with open(FILE_ALL_VAL_JSON, 'w') as outfile:
     json.dump(val_data, outfile)
+
+
+deep_train_data = {}
+deep_train_data['annotations'] = deep_train_anno
+deep_train_data['categories'] = all_cate
+deep_train_data['images'] = deep_train_img
+with open(FILE_DEEP_TRAIN_JSON, 'w') as outfile:
+    json.dump(deep_train_data, outfile)
+    
+deep_val_data = {}
+deep_val_data['annotations'] = deep_val_anno
+deep_val_data['categories'] = all_cate
+deep_val_data['images'] = deep_val_img
+with open(FILE_DEEP_VAL_JSON, 'w') as outfile:
+    json.dump(deep_val_data, outfile)
     
 print('end - make json file')
 

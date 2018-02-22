@@ -1,0 +1,7 @@
+## resnet50_coco_best_v1.2.2.h5에서 weights를 로드하여 deepfashion 학습시킴
+
+python keras_retinanet/bin/train.py --batch-size 1 --epochs 50 --steps 10 \
+--snapshot-path /Users/luke/Documents/ml_models/ \
+--weights /Users/luke/Documents/ml_models/resnet50_coco_best_v1.2.2.h5 \
+coco \
+dataset/all
