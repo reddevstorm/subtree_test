@@ -15,6 +15,9 @@ Resnet에서 C3, C4, C5를 이어받아 새로운 Retinanet모델을 생성
 1. pyramid 생성
     * submodel과 pyramid_features을 조합하여 생성
 
+C3, C4, C5 -> P3, P4, P5, P6, P7
+[P3, P4, P5, P6, P7] + [regression, classification] -> [regression(P3)(P4)(P5)(P6)(P7), classification(P3)(P4)(P5)(P6)(P7)]
+
 ## 1.Resnet에서 C3, C4, C5를 이어받아 새로운 Retinanet모델을 생성
 * resnet에서 C3, C4, C5를 이어받아 pyramid_features를 생성
 * C3, C4, C5는 Conv2D로 순차적으로 연결되어 있는 network를 중간중간 저장하여 놓은 변수이다.
@@ -83,6 +86,8 @@ outputs = inputs
 ```
 * input - width, height가 정해지지 않은 256 채널
 * output - input에서 Conv2D(256 filter) 4개를 추가한다
+
+### default_classification_model
 
 
 ## 2.Retinanet에서 output도출

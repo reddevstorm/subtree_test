@@ -171,6 +171,7 @@ def __build_anchors(anchor_parameters, features):
             scales=anchor_parameters.scales,
             name='anchors_{}'.format(i)
         )(f))
+    print('__build_anchors', anchors)
     return keras.layers.Concatenate(axis=1)(anchors)
 
 
@@ -193,7 +194,10 @@ def retinanet(
 
     # for all pyramid levels, run available submodels
     pyramid = __build_pyramid(submodels, features)
+    print('pyramid', pyramid)
     anchors = __build_anchors(anchor_parameters, features)
+    print('anchors', anchors)
+    print('[anchors] + pyramid', [anchors] + pyramid)
 
     return keras.models.Model(inputs=inputs, outputs=[anchors] + pyramid, name=name)
 
