@@ -24,6 +24,10 @@ import keras
 import keras.preprocessing.image
 from keras.utils import multi_gpu_model
 import tensorflow as tf
+# from keras.utils import plot_model
+from keras.utils.vis_utils import plot_model
+import pydot
+import graphviz
 
 # Allow relative imports when being executed as script.
 if __name__ == "__main__" and __package__ is None:
@@ -326,7 +330,9 @@ def main(args=None):
         model, training_model, prediction_model = create_models(num_classes=train_generator.num_classes(), weights=weights, multi_gpu=args.multi_gpu)
 
     # print model summary
-    # print(model.summary())
+    print(model.summary())
+    if not os.path.exists("images/model.png"):
+        plot_model(model, to_file='images/model.png', show_shapes=True, show_layer_names=True)
 
     # create the callbacks
     print('create the callbacks...')
