@@ -29,7 +29,7 @@ if not os.path.exists(os.path.join(DIR_DEEPFASHION, DIR_DEEPFASHION_IMAGE)):
     os.makedirs(os.path.join(DIR_DEEPFASHION, DIR_DEEPFASHION_IMAGE))
     
     
-START_CATEGORY_ID = 100
+START_CATEGORY_ID = 0
 
 
 # path 설정
