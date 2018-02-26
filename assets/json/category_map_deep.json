@@ -3,463 +3,463 @@
 		{
 			"id": "A01",
 			"supercategory": "패션의류",
-			"name": "정장",
+			"name": "suit",
 			"coco_ids": []
 		},
 		{
 			"id": "A02",
 			"supercategory": "패션의류",
-			"name": "니트",
+			"name": "knit",
 			"coco_ids": [16,20]
 		},
 		{
 			"id": "A03",
 			"supercategory": "패션의류",
-			"name": "카디건",
+			"name": "cardigan",
 			"coco_ids": [6]
 		},
 		{
 			"id": "A04",
 			"supercategory": "패션의류",
-			"name": "원피스",
+			"name": "one-piece",
 			"coco_ids": [37,38,41,42,43,48,50]
 		},
 		{
 			"id": "A05",
 			"supercategory": "패션의류",
-			"name": "티셔츠",
+			"name": "t-shirt",
 			"coco_ids": [1,9,10,12,17,18,19]
 		},
 		{
 			"id": "A06",
 			"supercategory": "패션의류",
-			"name": "블라우스",
+			"name": "blouse",
 			"coco_ids": [3,40]
 		},
 		{
 			"id": "A07",
 			"supercategory": "패션의류",
-			"name": "셔츠",
+			"name": "shirt",
 			"coco_ids": [5,7,49,8]
 		},
 		{
 			"id": "A08",
 			"supercategory": "패션의류",
-			"name": "점퍼",
+			"name": "jumper",
 			"coco_ids": [11,13]
 		},
 		{
 			"id": "A09",
 			"supercategory": "패션의류",
-			"name": "재킷",
+			"name": "jacket",
 			"coco_ids": [2]
 		},
 		{
 			"id": "A10",
 			"supercategory": "패션의류",
-			"name": "코트",
+			"name": "coat",
 			"coco_ids": [14,15,25,39]
 		},
 		{
 			"id": "A11",
 			"supercategory": "패션의류",
-			"name": "바지",
+			"name": "pants",
 			"coco_ids": [21,22,23,24,28,29,32,34,35,36]
 		},
 		{
 			"id": "A12",
 			"supercategory": "패션의류",
-			"name": "청바지",
+			"name": "jeans",
 			"coco_ids": [26,27]
 		},
 		{
 			"id": "A13",
 			"supercategory": "패션의류",
-			"name": "치마",
+			"name": "skirt",
 			"coco_ids": [31,33]
 		},
 		{
 			"id": "A14",
 			"supercategory": "패션의류",
-			"name": "레깅스",
+			"name": "leggings",
 			"coco_ids": [30]
 		},
 		{
 			"id": "A15",
 			"supercategory": "패션의류",
-			"name": "조끼",
+			"name": "vest",
 			"coco_ids": []
 		},
 		{
 			"id": "A18",
 			"supercategory": "패션의류",
-			"name": "홈웨어",
+			"name": "homeware",
 			"coco_ids": [45,47]
 		},
 		{
 			"id": "A19",
 			"supercategory": "패션의류",
-			"name": "특수의상",
+			"name": "special-clothes",
 			"coco_ids": [44,46]
 		},
 		{
 			"id": "A20",
 			"supercategory": "패션의류",
-			"name": "트레이닝복",
+			"name": "sweatsuit",
 			"coco_ids": []
 		},
 		{
 			"id": "B01",
 			"supercategory": "패션잡화",
-			"name": "신발",
+			"name": "shoes",
 			"coco_ids": []
 		},
 		{
 			"id": "B02",
 			"supercategory": "패션잡화",
-			"name": "가방",
+			"name": "bag",
 			"coco_ids": []
 		},
 		{
 			"id": "B03",
 			"supercategory": "패션잡화",
-			"name": "지갑",
+			"name": "wallet",
 			"coco_ids": []
 		},
 		{
 			"id": "B04",
 			"supercategory": "패션잡화",
-			"name": "양말",
+			"name": "socks",
 			"coco_ids": []
 		},
 		{
 			"id": "B05",
 			"supercategory": "패션잡화",
-			"name": "벨트",
+			"name": "belt",
 			"coco_ids": []
 		},
 		{
 			"id": "B06",
 			"supercategory": "패션잡화",
-			"name": "주얼리",
+			"name": "jewellery",
 			"coco_ids": []
 		},
 		{
 			"id": "B07",
 			"supercategory": "패션잡화",
-			"name": "안경",
+			"name": "glasses",
 			"coco_ids": []
 		},
 		{
 			"id": "B08",
 			"supercategory": "패션잡화",
-			"name": "모자",
+			"name": "hat-cap",
 			"coco_ids": []
 		},
 		{
 			"id": "B09",
 			"supercategory": "패션잡화",
-			"name": "시계",
+			"name": "clock",
 			"coco_ids": []
 		},
 		{
 			"id": "B10",
 			"supercategory": "패션잡화",
-			"name": "장갑",
+			"name": "gloves",
 			"coco_ids": []
 		},
 		{
 			"id": "B11",
 			"supercategory": "패션잡화",
-			"name": "머플러",
+			"name": "muffler",
 			"coco_ids": []
 		},
 		{
 			"id": "B12",
 			"supercategory": "패션잡화",
-			"name": "넥타이",
+			"name": "necktie",
 			"coco_ids": []
 		},
 		{
 			"id": "B14",
 			"supercategory": "패션잡화",
-			"name": "패션소품",
+			"name": "fashion accessories",
 			"coco_ids": []
 		},
 		{
 			"id": "B15",
 			"supercategory": "패션잡화",
-			"name": "선글라스",
+			"name": "sunglasses",
 			"coco_ids": []
 		},
 		{
 			"id": "C01",
 			"supercategory": "뷰티",
-			"name": "스킨케어",
+			"name": "skin care",
 			"coco_ids": []
 		},
 		{
 			"id": "C02",
 			"supercategory": "뷰티",
-			"name": "향수",
+			"name": "perfume",
 			"coco_ids": []
 		},
 		{
 			"id": "C05",
 			"supercategory": "뷰티",
-			"name": "네일케어",
+			"name": "nail care",
 			"coco_ids": []
 		},
 		{
 			"id": "C06",
 			"supercategory": "뷰티",
-			"name": "바디케어",
+			"name": "body care",
 			"coco_ids": []
 		},
 		{
 			"id": "C07",
 			"supercategory": "뷰티",
-			"name": "헤어케어",
+			"name": "haircare",
 			"coco_ids": []
 		},
 		{
 			"id": "C08",
 			"supercategory": "뷰티",
-			"name": "뷰티소품",
+			"name": "Beauty-props",
 			"coco_ids": []
 		},
 		{
 			"id": "C09",
 			"supercategory": "뷰티",
-			"name": "선케어",
+			"name": "Sun Care",
 			"coco_ids": []
 		},
 		{
 			"id": "C10",
 			"supercategory": "뷰티",
-			"name": "베이스메이크업",
+			"name": "base makeup",
 			"coco_ids": []
 		},
 		{
 			"id": "C11",
 			"supercategory": "뷰티",
-			"name": "색조메이크업",
+			"name": "color makeup",
 			"coco_ids": []
 		},
 		{
 			"id": "C12",
 			"supercategory": "뷰티",
-			"name": "클렌징",
+			"name": "cleansing",
 			"coco_ids": []
 		},
 		{
 			"id": "C13",
 			"supercategory": "뷰티",
-			"name": "헤어스타일링",
+			"name": "hair styling",
 			"coco_ids": []
 		},
 		{
 			"id": "D02",
 			"supercategory": "인테리어/가구",
-			"name": "침구",
+			"name": "bedding",
 			"coco_ids": []
 		},
 		{
 			"id": "D03",
 			"supercategory": "인테리어/가구",
-			"name": "카페트",
+			"name": "carpet",
 			"coco_ids": []
 		},
 		{
 			"id": "D04",
 			"supercategory": "인테리어/가구",
-			"name": "인테리어소품",
+			"name": "interior piece",
 			"coco_ids": []
 		},
 		{
 			"id": "D05",
 			"supercategory": "인테리어/가구",
-			"name": "조명",
+			"name": " lighting",
 			"coco_ids": []
 		},
 		{
 			"id": "D06",
 			"supercategory": "인테리어/가구",
-			"name": "의자",
+			"name": "chair",
 			"coco_ids": []
 		},
 		{
 			"id": "D07",
 			"supercategory": "인테리어/가구",
-			"name": "수납가구",
+			"name": "receipt furniture",
 			"coco_ids": []
 		},
 		{
 			"id": "D08",
 			"supercategory": "인테리어/가구",
-			"name": "테이블",
+			"name": "table",
 			"coco_ids": []
 		},
 		{
 			"id": "D09",
 			"supercategory": "인테리어/가구",
-			"name": "소파",
+			"name": "sofa",
 			"coco_ids": []
 		},
 		{
 			"id": "D10",
 			"supercategory": "인테리어/가구",
-			"name": "침대",
+			"name": "bed",
 			"coco_ids": []
 		},
 		{
 			"id": "E01",
 			"supercategory": "출산/육아",
-			"name": "출산용품",
+			"name": "layette",
 			"coco_ids": []
 		},
 		{
 			"id": "E02",
 			"supercategory": "출산/육아",
-			"name": "육아용품",
+			"name": "nursery products",
 			"coco_ids": []
 		},
 		{
 			"id": "E03",
 			"supercategory": "출산/육아",
-			"name": "임부용품",
+			"name": "pregnant-woman-goods",
 			"coco_ids": []
 		},
 		{
 			"id": "E04",
 			"supercategory": "출산/육아",
-			"name": "유아동의류",
+			"name": "baby-clothing",
 			"coco_ids": []
 		},
 		{
 			"id": "E05",
 			"supercategory": "출산/육아",
-			"name": "유아동잡화",
+			"name": "baby-miscellaneous-goods",
 			"coco_ids": []
 		},
 		{
 			"id": "E06",
 			"supercategory": "출산/육아",
-			"name": "유아용품",
+			"name": "baby-products",
 			"coco_ids": []
 		},
 		{
 			"id": "E07",
 			"supercategory": "출산/육아",
-			"name": "유아용장난감",
+			"name": "Infant toys",
 			"coco_ids": []
 		},
 		{
 			"id": "G01",
 			"supercategory": "가전",
-			"name": "주방가전",
+			"name": "kitchen electric appliances",
 			"coco_ids": []
 		},
 		{
 			"id": "G02",
 			"supercategory": "가전",
-			"name": "영상가전",
+			"name": "image electronics",
 			"coco_ids": []
 		},
 		{
 			"id": "G03",
 			"supercategory": "가전",
-			"name": "계절가전",
+			"name": "season electronics",
 			"coco_ids": []
 		},
 		{
 			"id": "G04",
 			"supercategory": "가전",
-			"name": "생활가전",
+			"name": "household appliances",
 			"coco_ids": []
 		},
 		{
 			"id": "G05",
 			"supercategory": "가전",
-			"name": "건강가전",
+			"name": "health appliances",
 			"coco_ids": []
 		},
 		{
 			"id": "G06",
 			"supercategory": "가전",
-			"name": "냉장고",
+			"name": "refrigerator",
 			"coco_ids": []
 		},
 		{
 			"id": "G07",
 			"supercategory": "가전",
-			"name": "세탁기",
+			"name": "washing machine",
 			"coco_ids": []
 		},
 		{
 			"id": "H01",
 			"supercategory": "레저",
-			"name": "스포츠용품",
+			"name": "sporting goods",
 			"coco_ids": []
 		},
 		{
 			"id": "H02",
 			"supercategory": "레저",
-			"name": "캠핑용품",
+			"name": "camping supplies",
 			"coco_ids": []
 		},
 		{
 			"id": "H03",
 			"supercategory": "레저",
-			"name": "스포츠의류",
+			"name": "Sports Clothings",
 			"coco_ids": []
 		},
 		{
 			"id": "H04",
 			"supercategory": "레저",
-			"name": "수영복",
+			"name": "swimsuit",
 			"coco_ids": []
 		},
 		{
 			"id": "F03",
 			"supercategory": "기타",
-			"name": "애완용품",
+			"name": "pet food and supplies",
 			"coco_ids": []
 		},
 		{
 			"id": "F04",
 			"supercategory": "기타",
-			"name": "식품",
+			"name": "food",
 			"coco_ids": []
 		},
 		{
 			"id": "F05",
 			"supercategory": "기타",
-			"name": "자동차용품",
+			"name": "car appliances",
 			"coco_ids": []
 		},
 		{
 			"id": "F06",
 			"supercategory": "기타",
-			"name": "전자기기",
+			"name": "electronic equipment",
 			"coco_ids": []
 		},
 		{
 			"id": "F07",
 			"supercategory": "기타",
-			"name": "주방용품",
+			"name": "kitchen utensils",
 			"coco_ids": []
 		},
 		{
 			"id": "F08",
 			"supercategory": "기타",
-			"name": "악기",
+			"name": "musical-instrument",
 			"coco_ids": []
 		},
 		{
 			"id": "F09",
 			"supercategory": "기타",
-			"name": "음료",
+			"name": "drink",
 			"coco_ids": []
 		}
 	]
