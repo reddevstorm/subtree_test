@@ -161,8 +161,8 @@ class Generator(object):
         if self.group_method == 'random':
             random.shuffle(order)
         elif self.group_method == 'ratio':
-            # order.sort(key=lambda x: self.image_aspect_ratio(x))
-            print('skip - generator.py - order.sort(key=lambda x: self.image_aspect_ratio(x))')
+            order.sort(key=lambda x: self.image_aspect_ratio(x))
+            # print('skip - generator.py - order.sort(key=lambda x: self.image_aspect_ratio(x))')
 
         # divide into groups, one group = one batch
         self.groups = [[order[x % len(order)] for x in range(i, i + self.batch_size)] for i in range(0, len(order), self.batch_size)]
