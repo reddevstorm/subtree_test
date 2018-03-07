@@ -83,7 +83,7 @@ def create_models(num_classes, weights, multi_gpu=0):
         model            = model_with_weights(resnet_retinanet(num_classes, backbone=RESNET_BACKBONE, nms=True), weights=weights, skip_mismatch=True)
         training_model   = model
         prediction_model = model
-
+    
     # compile model
     training_model.compile(
         loss={
