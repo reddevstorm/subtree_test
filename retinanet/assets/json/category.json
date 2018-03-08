@@ -1,0 +1,466 @@
+{
+	"categories": [
+		{
+			"id": "A01",
+			"supercategory": "패션의류",
+			"name": "suit",
+			"coco_ids": []
+		},
+		{
+			"id": "A02",
+			"supercategory": "패션의류",
+			"name": "니트",
+			"coco_ids": []
+		},
+		{
+			"id": "A03",
+			"supercategory": "패션의류",
+			"name": "카디건",
+			"coco_ids": []
+		},
+		{
+			"id": "A04",
+			"supercategory": "패션의류",
+			"name": "원피스",
+			"coco_ids": []
+		},
+		{
+			"id": "A05",
+			"supercategory": "패션의류",
+			"name": "티셔츠",
+			"coco_ids": []
+		},
+		{
+			"id": "A06",
+			"supercategory": "패션의류",
+			"name": "블라우스",
+			"coco_ids": []
+		},
+		{
+			"id": "A07",
+			"supercategory": "패션의류",
+			"name": "셔츠",
+			"coco_ids": []
+		},
+		{
+			"id": "A08",
+			"supercategory": "패션의류",
+			"name": "점퍼",
+			"coco_ids": []
+		},
+		{
+			"id": "A09",
+			"supercategory": "패션의류",
+			"name": "재킷",
+			"coco_ids": []
+		},
+		{
+			"id": "A10",
+			"supercategory": "패션의류",
+			"name": "코트",
+			"coco_ids": []
+		},
+		{
+			"id": "A11",
+			"supercategory": "패션의류",
+			"name": "바지",
+			"coco_ids": []
+		},
+		{
+			"id": "A12",
+			"supercategory": "패션의류",
+			"name": "청바지",
+			"coco_ids": []
+		},
+		{
+			"id": "A13",
+			"supercategory": "패션의류",
+			"name": "치마",
+			"coco_ids": []
+		},
+		{
+			"id": "A14",
+			"supercategory": "패션의류",
+			"name": "레깅스",
+			"coco_ids": []
+		},
+		{
+			"id": "A15",
+			"supercategory": "패션의류",
+			"name": "조끼",
+			"coco_ids": []
+		},
+		{
+			"id": "A18",
+			"supercategory": "패션의류",
+			"name": "홈웨어",
+			"coco_ids": []
+		},
+		{
+			"id": "A19",
+			"supercategory": "패션의류",
+			"name": "특수의상",
+			"coco_ids": []
+		},
+		{
+			"id": "A20",
+			"supercategory": "패션의류",
+			"name": "트레이닝복",
+			"coco_ids": []
+		},
+		{
+			"id": "B01",
+			"supercategory": "패션잡화",
+			"name": "신발",
+			"coco_ids": []
+		},
+		{
+			"id": "B02",
+			"supercategory": "패션잡화",
+			"name": "가방",
+			"coco_ids": [25,27,29]
+		},
+		{
+			"id": "B03",
+			"supercategory": "패션잡화",
+			"name": "지갑",
+			"coco_ids": []
+		},
+		{
+			"id": "B04",
+			"supercategory": "패션잡화",
+			"name": "양말",
+			"coco_ids": []
+		},
+		{
+			"id": "B05",
+			"supercategory": "패션잡화",
+			"name": "벨트",
+			"coco_ids": []
+		},
+		{
+			"id": "B06",
+			"supercategory": "패션잡화",
+			"name": "주얼리",
+			"coco_ids": []
+		},
+		{
+			"id": "B07",
+			"supercategory": "패션잡화",
+			"name": "안경",
+			"coco_ids": []
+		},
+		{
+			"id": "B08",
+			"supercategory": "패션잡화",
+			"name": "모자",
+			"coco_ids": []
+		},
+		{
+			"id": "B09",
+			"supercategory": "패션잡화",
+			"name": "시계",
+			"coco_ids": [75]
+		},
+		{
+			"id": "B10",
+			"supercategory": "패션잡화",
+			"name": "장갑",
+			"coco_ids": []
+		},
+		{
+			"id": "B11",
+			"supercategory": "패션잡화",
+			"name": "머플러",
+			"coco_ids": []
+		},
+		{
+			"id": "B12",
+			"supercategory": "패션잡화",
+			"name": "넥타이",
+			"coco_ids": [28]
+		},
+		{
+			"id": "B14",
+			"supercategory": "패션잡화",
+			"name": "패션소품",
+			"coco_ids": []
+		},
+		{
+			"id": "B15",
+			"supercategory": "패션잡화",
+			"name": "선글라스",
+			"coco_ids": []
+		},
+		{
+			"id": "C01",
+			"supercategory": "뷰티",
+			"name": "스킨케어",
+			"coco_ids": []
+		},
+		{
+			"id": "C02",
+			"supercategory": "뷰티",
+			"name": "향수",
+			"coco_ids": []
+		},
+		{
+			"id": "C05",
+			"supercategory": "뷰티",
+			"name": "네일케어",
+			"coco_ids": []
+		},
+		{
+			"id": "C06",
+			"supercategory": "뷰티",
+			"name": "바디케어",
+			"coco_ids": []
+		},
+		{
+			"id": "C07",
+			"supercategory": "뷰티",
+			"name": "헤어케어",
+			"coco_ids": []
+		},
+		{
+			"id": "C08",
+			"supercategory": "뷰티",
+			"name": "뷰티소품",
+			"coco_ids": []
+		},
+		{
+			"id": "C09",
+			"supercategory": "뷰티",
+			"name": "선케어",
+			"coco_ids": []
+		},
+		{
+			"id": "C10",
+			"supercategory": "뷰티",
+			"name": "베이스메이크업",
+			"coco_ids": []
+		},
+		{
+			"id": "C11",
+			"supercategory": "뷰티",
+			"name": "색조메이크업",
+			"coco_ids": []
+		},
+		{
+			"id": "C12",
+			"supercategory": "뷰티",
+			"name": "클렌징",
+			"coco_ids": []
+		},
+		{
+			"id": "C13",
+			"supercategory": "뷰티",
+			"name": "헤어스타일링",
+			"coco_ids": []
+		},
+		{
+			"id": "D02",
+			"supercategory": "인테리어/가구",
+			"name": "침구",
+			"coco_ids": []
+		},
+		{
+			"id": "D03",
+			"supercategory": "인테리어/가구",
+			"name": "카페트",
+			"coco_ids": []
+		},
+		{
+			"id": "D04",
+			"supercategory": "인테리어/가구",
+			"name": "인테리어소품",
+			"coco_ids": []
+		},
+		{
+			"id": "D05",
+			"supercategory": "인테리어/가구",
+			"name": "조명",
+			"coco_ids": []
+		},
+		{
+			"id": "D06",
+			"supercategory": "인테리어/가구",
+			"name": "의자",
+			"coco_ids": [57]
+		},
+		{
+			"id": "D07",
+			"supercategory": "인테리어/가구",
+			"name": "수납가구",
+			"coco_ids": []
+		},
+		{
+			"id": "D08",
+			"supercategory": "인테리어/가구",
+			"name": "테이블",
+			"coco_ids": [61]
+		},
+		{
+			"id": "D09",
+			"supercategory": "인테리어/가구",
+			"name": "소파",
+			"coco_ids": [58]
+		},
+		{
+			"id": "D10",
+			"supercategory": "인테리어/가구",
+			"name": "침대",
+			"coco_ids": [60]
+		},
+		{
+			"id": "E01",
+			"supercategory": "출산/육아",
+			"name": "출산용품",
+			"coco_ids": []
+		},
+		{
+			"id": "E02",
+			"supercategory": "출산/육아",
+			"name": "육아용품",
+			"coco_ids": []
+		},
+		{
+			"id": "E03",
+			"supercategory": "출산/육아",
+			"name": "임부용품",
+			"coco_ids": []
+		},
+		{
+			"id": "E04",
+			"supercategory": "출산/육아",
+			"name": "유아동의류",
+			"coco_ids": []
+		},
+		{
+			"id": "E05",
+			"supercategory": "출산/육아",
+			"name": "유아동잡화",
+			"coco_ids": []
+		},
+		{
+			"id": "E06",
+			"supercategory": "출산/육아",
+			"name": "유아용품",
+			"coco_ids": []
+		},
+		{
+			"id": "E07",
+			"supercategory": "출산/육아",
+			"name": "유아용장난감",
+			"coco_ids": []
+		},
+		{
+			"id": "G01",
+			"supercategory": "가전",
+			"name": "주방가전",
+			"coco_ids": []
+		},
+		{
+			"id": "G02",
+			"supercategory": "가전",
+			"name": "영상가전",
+			"coco_ids": [63]
+		},
+		{
+			"id": "G03",
+			"supercategory": "가전",
+			"name": "계절가전",
+			"coco_ids": []
+		},
+		{
+			"id": "G04",
+			"supercategory": "가전",
+			"name": "생활가전",
+			"coco_ids": []
+		},
+		{
+			"id": "G05",
+			"supercategory": "가전",
+			"name": "건강가전",
+			"coco_ids": []
+		},
+		{
+			"id": "G06",
+			"supercategory": "가전",
+			"name": "냉장고",
+			"coco_ids": [73]
+		},
+		{
+			"id": "G07",
+			"supercategory": "가전",
+			"name": "세탁기",
+			"coco_ids": []
+		},
+		{
+			"id": "H01",
+			"supercategory": "레저",
+			"name": "스포츠용품",
+			"coco_ids": []
+		},
+		{
+			"id": "H02",
+			"supercategory": "레저",
+			"name": "캠핑용품",
+			"coco_ids": []
+		},
+		{
+			"id": "H03",
+			"supercategory": "레저",
+			"name": "스포츠의류",
+			"coco_ids": []
+		},
+		{
+			"id": "H04",
+			"supercategory": "레저",
+			"name": "수영복",
+			"coco_ids": []
+		},
+		{
+			"id": "F03",
+			"supercategory": "기타",
+			"name": "애완용품",
+			"coco_ids": []
+		},
+		{
+			"id": "F04",
+			"supercategory": "기타",
+			"name": "식품",
+			"coco_ids": []
+		},
+		{
+			"id": "F05",
+			"supercategory": "기타",
+			"name": "자동차용품",
+			"coco_ids": []
+		},
+		{
+			"id": "F06",
+			"supercategory": "기타",
+			"name": "전자기기",
+			"coco_ids": []
+		},
+		{
+			"id": "F07",
+			"supercategory": "기타",
+			"name": "주방용품",
+			"coco_ids": []
+		},
+		{
+			"id": "F08",
+			"supercategory": "기타",
+			"name": "악기",
+			"coco_ids": []
+		},
+		{
+			"id": "F09",
+			"supercategory": "기타",
+			"name": "음료",
+			"coco_ids": []
+		}
+	]
+}

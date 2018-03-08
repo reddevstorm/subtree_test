@@ -1,0 +1,86 @@
+## resnet50_coco_best_v1.2.2.h5에서 weights를 로드하여 deepfashion 학습시킴
+
+python keras_retinanet/bin/train.py --batch-size 1 --epochs 50 --steps 10 \
+--snapshot-path /Users/luke/Documents/ml_models/ \
+--weights /Users/luke/Documents/ml_models/resnet50_coco_best_v1.2.2.h5 \
+coco \
+dataset/all
+
+
+python keras_retinanet/bin/train.py --batch-size 1 --epochs 50 --steps 10 \
+--snapshot-path /Users/luke/Documents/ml_models/ \
+--weights /Users/luke/Documents/ml_models/resnet50_coco_best_v1.2.2.h5 \
+coco \
+dataset/coco
+
+
+python keras_retinanet/bin/train.py --batch-size 1 --epochs 5000 --steps 100 \
+--snapshot-path /Users/luke/Documents/ml_models/ \
+coco \
+dataset/all
+
+
+
+# tensorboard view
+tensorboard --logdir=/Users/luke/Documents/dev/github/milkplz/keras-retinanet/logs
+
+
+
+
+
+####################################################################################
+# validation 용 command
+####################################################################################
+
+# Local
+
+python keras_retinanet/bin/train.py \
+--batch-size 1 --epochs 2 --steps 2 \
+--snapshot-path /Users/luke/Documents/ml_models \
+--snapshot /Users/luke/Documents/ml_models/deep/resnet50_csv_epoch_50_loss_0.90363.h5 \
+csv dataset/deepfashion/test_instances_val2017.csv \
+dataset/deepfashion/categories2017.csv \
+--val-annotations dataset/deepfashion/instances_val2017.csv
+
+# Server
+
+python keras_retinanet/bin/train.py \
+--batch-size 1 --epochs 1 --steps 1 \
+--snapshot-path /Users/edwin/Documents/works/AI/ml_models/tmp \
+--snapshot /Users/edwin/Documents/works/AI/models/deep/resnet50_csv_epoch_50_loss_0.90363.h5 \
+csv /Users/edwin/Documents/works/AI/datasets/deepfashion/instances_val2017.csv \
+/Users/edwin/Documents/works/AI/datasets/deepfashion/categories2017.csv \
+--val-annotations /Users/edwin/Documents/works/AI/datasets/deepfashion/instances_val2017.csv
+
+python keras_retinanet/bin/train.py \
+--batch-size 1 --epochs 1 --steps 1 \
+--snapshot-path /Users/edwin/Documents/works/AI/ml_models/tmp \
+--snapshot /Users/edwin/Documents/works/AI/models/all/resnet50_coco_epoch_20_loss_1.24909.h5 \
+coco /Users/edwin/Documents/works/AI/datasets/all
+
+
+
+
+
+####################################################################################
+# deepfashion main category training
+####################################################################################
+
+# Local
+
+python keras_retinanet/bin/train.py \
+--batch-size 1 --epochs 2 --steps 2 \
+--snapshot-path /Users/luke/Documents/ml_models \
+csv dataset/deepfashion/main_cate_train2017.csv \
+dataset/deepfashion/main_categories2017.csv \
+--val-annotations dataset/deepfashion/main_cate_val2017.csv
+
+# Server
+
+python keras_retinanet/bin/train.py \
+--batch-size 1 --epochs 50 --steps 10000 \
+--snapshot-path /Users/edwin/Documents/works/AI/ml_models \
+csv \
+/Users/edwin/Documents/works/AI/datasets/deepfashion/main_cate_train2017.csv \
+/Users/edwin/Documents/works/AI/datasets/deepfashion/main_categories2017.csv \
+--val-annotations /Users/edwin/Documents/works/AI/datasets/deepfashion/main_cate_val2017.csv
